@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Prompt</h2>
+
+<button onclick="highJump()">high jump score</button>
+
+<p id="demo"></p>
+
+<script>
+    function openingceremony(){
+        console.log('Let the games begin');
+        Race100();
+    }
+function Race100(){
+
+}
+function highJump() {
+  let text;
+  let person = prompt("Please enter color:", "red");
+  if (person == null || person == "") {
+    text = "Event was cancelled";
+  } else {
+    text = "Hello " + person;
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
